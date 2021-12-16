@@ -1,0 +1,113 @@
+body{
+    overflow-x: hidden;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 20vh 80vh 20vh;
+}
+.border {
+    border: 1px solid black;
+}
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ HEADER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+header{
+    background-color: blueviolet;
+
+}
+.headerContainer{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headerContainer__logo{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}   
+nav{
+    background-color: brown;
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul{
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: papayawhip;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+
+/*_______________________________--------________________________________*/
+/* ----+++++______________________ MAIN ______________________+++++---- */
+/*_______________________________--------________________________________*/
+main{
+    background-color: burlywood;
+}
+
+
+
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ FOOTER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+footer{
+    background-color: cornflowerblue;
+    display: flex;
+    
+}
+.footerSignature{
+    background-color: brown;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSignature label{
+    font-size: 2em;
+}
+.footerSocialMedia{
+    background-color: chartreuse;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerSocialMedia ul{
+    text-align: right;
+}
+.footerSocialMedia li{
+    display: inline;
+    padding-right: 20px;
+}
+.footerSocialMedia ul li a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+/* ----+++++_____________________ MEDIA QUERY ______________________+++++---- */
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+
+
+@media only screeen and (min-width: 700px) {
+    .border{
+        border: orange;
+    }
+}
+
+

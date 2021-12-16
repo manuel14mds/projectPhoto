@@ -1,0 +1,191 @@
+body{
+    overflow-x: hidden;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 22vh 80vh 19vh;
+}
+.border {
+    border: 1px solid black;
+}
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ HEADER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+header{
+    background-color: blueviolet;
+    
+}
+.headerContainer{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;   
+}
+.headerContainer__logo{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.headerContainer__logo a img{
+    width: 100%;
+}   
+nav{
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: papayawhip;
+    padding: 9px;
+    font-size: 1em;
+}
+
+
+/*_______________________________--------________________________________*/
+/* ----+++++______________________ MAIN ______________________+++++---- */
+/*_______________________________--------________________________________*/
+main{
+    background-color: burlywood;
+}
+
+
+
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ FOOTER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+footer{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerSignature{
+    background-color: brown;
+    width: 100;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSignature label{
+    font-size: 2em;
+}
+.footerSocialMedia{
+    background-color: chartreuse;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialMedia li{
+    display: inline;
+    padding-right: 20px;
+}
+.footerSocialMedia ul li a{
+    background-color: pink;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+/* ----+++++_____________________ MEDIA QUERY ______________________+++++---- */
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+
+
+@media (min-width: 558px) {
+    /*_______________________________xxxxxxx HEADER 558px xxxxxx________________________________*/
+    #grid{
+        display: grid;
+        grid-template-rows: 22vh 80vh 19vh;
+    }
+    main{
+        background-color: pink;
+    }
+    .headerContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .headerContainer__logo{
+        width: 100px;
+        height: 100px;
+    }   
+    nav{
+        width: 80%;
+        justify-content: flex-end;
+    }
+    nav ul li a{
+        font-size: 1.3em;
+    }
+    /*_______________________________xxxxxx FOOTER 558px xxxxxxx________________________________*/
+    footer{
+        flex-direction: row;
+    }
+    .footerSignature{
+        width: 40%;
+    }
+    .footerSignature label{
+        font-size: 2em;
+    }
+    .footerSocialMedia{
+        width: 60%;
+        height: 100%;
+    }
+    .footerSocialMedia li{
+        padding-right: 7px;
+    }
+    .footerSocialMedia ul li a{
+        font-size: 1em;
+    }
+    
+}
+@media (min-width: 1081px) {
+    /*_______________________________xxxxxxx HEADER 1081px xxxxxx________________________________*/
+    main{
+        background-color: lightgreen;
+    }
+    .headerContainer__logo{
+        width: 150px;
+        height: 150px;
+    }
+    .headerContainer nav ul{
+        margin-right: 5%;
+    }
+    nav ul li a{
+        font-size: 1.7em;
+        padding: 20px;
+    }
+    /*_______________________________xxxxxx FOOTER 1081px xxxxxxx________________________________*/
+    .footerSignature label{
+        font-size: 2.5em;
+    }
+    .footerSocialMedia li{
+        padding-right: 15px;
+    }
+    .footerSocialMedia ul li a{
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
